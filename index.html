@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Gallery</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Spicy+Rice&display=swap" rel="stylesheet">  </head>
+  <body>
+    <h2><b>How to make meringue cookies</b></h2>
+    <img src="img/merengue.jpg" alt="Cookies" width="300" height="300">
+
+<p class="intro">As of the last couple of weeks, we all find ourselves at home in Quarantine, due to COVID-19. Times are getting rough and spending all your days in Quarantine can be tedious. I am sure we can all agree that at this point we find ourselves looking for anything to possibly do in order to satisfy our boredom.  Baking is a great way to distract yourself and bond with your quarantine partners.  Although, being in quarantine means we can´t simply go to the market and buy any ingredients we want.  Fortunately, Meringue cookies are a simple and yummy recipe that requires items that you can find in almost any pantry.  Baking can be a good activity in Quarantine and an easy, accessible baking recipe like Meringue cookies is the perfect way to go!
+        <br>
+        <button class="start">Let's Go</button>
+        </p>
+        <h2>Ingredients</h2>
+        <ul>
+          <li>3 large egg whites, at room temperature</li>
+          <li>1/2 teaspoon vanilla extract </li>
+          <li>1/8 teaspoon cream of tartar</li>
+          <li>3/4 cup powdered sugar</li>
+          <li>1 cup of milk chocolate (optional)</li>
+        </ul>
+
+
+
+  <div id="slideshow">
+   <div>
+     <img src="img/lemon.jpg" width="300" height="300" alt="Ingredients:lemon">
+   </div>
+   <div>
+     <img src="img/eggs.jpg" width="300" height="300" alt="Ingredients:eggs">
+   </div>
+   <div>
+  <img src="img/domino.jpg" width="300" height="300" alt="Ingredients:domino">
+   </div>
+   <div>
+    <img src="img/vanilla.jpg" width="300" height="300" alt="Ingredients:vanilla">
+      </div>
+      <div>
+      <img src="img/chocolate.jpg" width="300" height="300" alt="Ingredients:eggs">
+         </div>
+         <div>
+
+         Let's continue
+  </div>
+</div>
+<p>
+  <a href="index.html"><-back</a>
+ </p>
+ <script type="text/javascript">
+     $(document).ready(function(){
+         //hide all divs except the first
+       $("#slideshow > div:gt(0)").hide();
+
+    //next slide
+    setInterval(function() {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+        //3000 milliseconds
+    },  3000);
+
+      });
+</script>
+
+<h2>Instructions</h2>
+
+
+<div class="accordion">
+
+   <h2><a href="">Step 1</a></h2>
+   <p>In a stand mixer, add the egg whites, vanilla and cream of tartar. Beat until the mixture is frothy. Sift the powdered sugar and gradually add the sugar 1 tablespoon at a time, waiting about 15 seconds between each addition. Once all of the sugar has been added, beat for an additional 5 minutes. The egg whites should be glossy and stiff but not dry
+<br>
+<img src="img/mixer.jpg" width="300" height="300" alt="steps">
+<img src="img/sugar.jpg" width="300" height="300" alt="steps">
+</p>
+
+   <h2><a href="">Step 2</a></h2>
+   <p>Preheat the oven to 200 degrees F; line 2 baking sheets with parchment paper.Spoon the mixture into a large pastry bag fitted with a large star tip. Pipe 2-inch cookies onto the lined baking sheets, leaving 1 inch between each cookie.
+<br>
+     <img src="img/balls.jpg" width="300" height="300" alt="steps">
+     <img src="img/tray.jpg" width="300" height="300" alt="steps">
+
+   </p>
+
+   <h2><a href="">Step 3</a></h2>
+   <p>Bake for 45 minutes, then turn off the oven and leave the cookies in the oven for an additional 30 minutes. Remove and cool completely
+<br>
+<img src="img/oven.jpg" width="300" height="300" alt="steps">
+
+   </p>
+   </div>
+
+   <p>
+     <a href="index.html"><- back</a>
+   </p>
+   <script type="text/javascript">
+       $(document).ready(function(){
+         var allPanels = $('.accordion p').hide();
+
+         $('.accordion > h2 > a').click(function() {
+           allPanels.slideUp();
+           $(this).parent().next().slideDown();
+           return false;
+         });
+
+           });
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <p>
+          Nutritional Facts of meringue
+        </p>
+        <p>
+       <div class="demobox">
+
+           <p>Calories: 22.9. Calories from Fat 0 g 0 %</p>
+<p>Cholesterol 0 mg 0 %</p>
+<p>Sodium 20.5 mg 0 %</p>
+<p>Total Carbohydrate 5.5 g 1 %</p>
+<p>Dietary Fiber 0 g 0 % Sugars 5.5 g 22 %</p>
+<p>Protein 0.3 g 0 %</p>
+ </div>
+
+        <p>
+            <button id="myButt">Click to hide!</button>
+        </p>
+        <p>
+          <a href="index.html"><- back</a>
+        </p>
+        <!-- Your JQuery goes here, the "script" element s usually places before the /body tag -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                  //all js goes in here
+                  //the code below toggles between show hide
+                  $( "#myButt" ).click(function() {
+                        $(".demobox").toggle(1000);
+                    });
+
+                });
+        </script>
+
+
+
+
+
+
+  </body>
+</html>

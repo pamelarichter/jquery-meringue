@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    background-color: FloralWhite;
+    text-align: center;
+    color: salmon;
+     font-size: 20px;
+
+}
+.intro{
+color:salmon;
+text-align: left;
+ font-size: 25px;
+}
+div{
+  margin: 20px;
+  text align:auto;
+}
+img {
+  width: 350px;
+  height:350px;
+  border: 3px solid salmon;
+}
+#slideshow{
+  margin: 50px auto;
+  position: relative;
+  width: 300px
+  heigh:300px
+  padding: 5px
+  overflow:hidden;
+}
+#accordion{
+  margin: 50px auto;
+  position: relative;
+  width: 300px
+  heigh:300px
+  padding: 5px
+  overflow:hidden;
+  align-items: auto;
+  }
